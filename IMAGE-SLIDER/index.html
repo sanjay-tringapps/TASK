@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMAGE SLIDER</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"> </script>
+    
 </head>
 <body>
 <div class="slider">
@@ -34,14 +36,5 @@
         <label for="radio3" class="manuals"></label>
     </div>
 </div>
-<script>
-var counter=1;
-setInterval(function(){
-    document.getElementById('radio'+counter).checked=true;
-    counter++;
-    if(counter>3)
-    counter=1;
-},2500)
-</script>
 </body>
 </html>
