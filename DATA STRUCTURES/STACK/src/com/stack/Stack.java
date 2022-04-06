@@ -1,14 +1,11 @@
 package com.stack;
-
 import java.util.LinkedList;
 import java.util.Scanner;
-
 public class Stack
 {
-   static LinkedList<String> stack = new LinkedList<String>();
+   static LinkedList<String> stack = new LinkedList<String>();  //storing stack values using linked list
    public static void main(String[] args)
    {
-	   
 	   Scanner s=new Scanner(System.in);
 	   System.out.println("STACK");
 	   while(true)
@@ -21,7 +18,7 @@ public class Stack
 		     case 1:
 		    	 System.out.print("ENTER THE DATA:");
 		  	     String value=s.next();
-		    	 push(value);
+		    	     push(value);
 		    	 
 		    	 break;
 		     case 2:
@@ -45,12 +42,12 @@ public class Stack
 	   }
    }
    
-   public static void push(String value)
+   public static void push(String value)   // adding data in stack
    {
 	   stack.add(value);
    }
    
-   public static void pop()
+   public static void pop()               // deleting last data in stack
    {
 	   if(stack.size()==0)
 	   {
@@ -60,7 +57,7 @@ public class Stack
 	   stack.removeLast();
    }
    
-   public static void peek()
+   public static void peek()             // printing the last data in stack
    {
 	   if(stack.size()==0)
 	   {
