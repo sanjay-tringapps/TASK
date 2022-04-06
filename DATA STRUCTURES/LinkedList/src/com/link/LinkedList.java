@@ -1,14 +1,11 @@
 package com.link;
-
 import java.util.Scanner;
-
 public class LinkedList {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-        Node head=null;
-		Scanner s=new Scanner(System.in);
-		Node temp=new Node();
+	public static void main(String[] args)
+	{
+                Node head=null;
+		Scanner s=new Scanner(System.in);  //using scanner class we get input
+		Node temp=new Node();              //create temporary object for node class
 		System.out.println("LINKED LIST");
         while(true)
         {
@@ -23,7 +20,7 @@ public class LinkedList {
         	{
         	   case 1:
         		   System.out.print("ENTER THE DATA:");
-                   String value=s.next();
+                           String value=s.next();
         		   head=temp.insertion(head,value);
         		   break;
         	   case 2:
@@ -38,13 +35,7 @@ public class LinkedList {
         	   default:
         		   System.out.println("ENTER CORRECT INPUT");
         		   break;
-        		   
-        		   
         	}
-        	
-        	
         }
-		
 	}
-
 }
